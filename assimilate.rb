@@ -62,6 +62,12 @@ ebooks = [
     :title    => "Seek and Destroy",
     :category => "Freelance",
     :url      => "http://www.petershallard.com/downloads/SeekAndDestroy.pdf"
+  },
+  {
+    :author   => "Leo Babauta",
+    :title    => "focus : a simplicity manifesto in the age of distraction",
+    :category => "Minimalism",
+    :url      => "http://focusmanifesto.s3.amazonaws.com/FocusFree.pdf"
   }
 ]
 
