@@ -68,6 +68,12 @@ ebooks = [
     :title    => "focus : a simplicity manifesto in the age of distraction",
     :category => "Minimalism",
     :url      => "http://focusmanifesto.s3.amazonaws.com/FocusFree.pdf"
+  },
+  {
+    :author   => "growwithstacy.com",
+    :title    => "Powerful Thinking, Successful Living",
+    :category => "Motivation",
+    :url      => "http://growwithstacy.com/wp-content/uploads/2010/12/PowerfulThinking.pdf"
   }
 ]
 
