@@ -45,12 +45,12 @@ ebooks = [
     :category => "Web Development",
     :url      => "http://www.the-web-book.com/index.php?a=xdl"
   },
-  {
-    :author   => "Mike Smith",
-    :title    => "Guide to Guerilla Freelancing",
-    :category => "Freelance",
-    :url      => "http://www.guerrillafreelancing.com/download/1"
-  },
+  #{
+    #:author   => "Mike Smith",
+    #:title    => "Guide to Guerilla Freelancing",
+    #:category => "Freelance",
+    #:url      => "http://www.guerrillafreelancing.com/download/1"
+  #},
   {
     :author   => "Michael Stelzner",
     :title    => "2010 Social Media Marketing Industry Report",
