@@ -74,6 +74,12 @@ ebooks = [
     :title    => "Powerful Thinking, Successful Living",
     :category => "Motivation",
     :url      => "http://growwithstacy.com/wp-content/uploads/2010/12/PowerfulThinking.pdf"
+  },
+  {
+    :author   => "growwithstacy.com",
+    :title    => "Blogging Basics",
+    :category => "Blogging",
+    :url      => "http://growwithstacy.com/wp-content/uploads/2010/08/Blogging-Basics.pdf"
   }
 ]
 
