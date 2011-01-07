@@ -99,6 +99,13 @@ ebooks = [
     :category => "Blogging",
     :url      => "http://growwithstacy.com/wp-content/uploads/2010/08/Blogging-Basics.pdf",
     :md5sum   => "d3ef394e050e6476fe3dfcf108e2ed81"
+  },
+  {
+    :author   => "Simon Black",
+    :title    => "Network Infiltration",
+    :category => "Networking",
+    :url      => "http://sovereignman.com/Network%20Infiltration.pdf",
+    :md5sum   => "0046fd66575ae653fd10684eece71ad8"
   }
 ]
 
