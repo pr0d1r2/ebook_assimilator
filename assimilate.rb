@@ -5,6 +5,8 @@ require 'net/http'
 require 'uri'
 require 'fileutils'
 
+require 'lib/ebook'
+
 Dir.chdir ENV['HOME']
 
 ebooks = [
@@ -104,38 +106,6 @@ Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
 Dir.chdir("EbooksAssimilated")
 
 ebooks.each do |ebook|
-  Dir.mkdir(ebook[:category]) unless File.directory?(ebook[:category])
-  Dir.chdir(ebook[:category])
-
-  uri = URI.parse(ebook[:url])
-
-  suffix = uri.path.split('.').last
-  output_file = "#{ebook[:author]} - #{ebook[:title]}.#{suffix}"
-
-  unless File.exist?(output_file) && Digest::MD5.hexdigest(File.read(output_file)) == ebook[:md5sum]
-    puts
-    puts "#{ebook[:category]} / #{ebook[:author]} \"#{ebook[:title]}\" (#{ebook[:url]})"
-    puts
-
-    FileUtils.touch(output_file)
-    Net::HTTP.start(uri.host) do |http|
-      f = open(output_file, "w")
-      begin
-        http.request_get(uri.request_uri) do |resp|
-          resp.read_body do |segment|
-            f.write(segment)
-          end
-        end
-      ensure
-        f.close()
-      end
-    end
-    md5sum = Digest::MD5.hexdigest(File.read(output_file))
-    unless md5sum == ebook[:md5sum]
-      puts "WARNING: file MD5 sum different from expected. Propably problem with download."
-    end
-    puts
-  end
-
-  Dir.chdir('..')
+  ebook = Ebook.download_verbose!(ebook)
 end
+
