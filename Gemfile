@@ -3,6 +3,7 @@ source :rubygems
 group :development do
   gem 'wirble'
   gem 'hirb'
+  gem 'awesome_print'
 end
 
 group :test do
