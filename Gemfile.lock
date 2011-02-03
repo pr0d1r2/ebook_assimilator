@@ -4,6 +4,8 @@ GEM
     ZenTest (4.4.2)
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
+    autotest-notification (2.3.1)
+      autotest (~> 4.3)
     awesome_print (0.3.1)
     diff-lcs (1.1.2)
     hirb (0.3.6)
@@ -22,6 +24,7 @@ PLATFORMS
 
 DEPENDENCIES
   autotest (= 4.4.6)
+  autotest-notification (= 2.3.1)
   awesome_print
   hirb
   rspec (= 2.4.0)
