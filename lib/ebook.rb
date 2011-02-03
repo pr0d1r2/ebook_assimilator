@@ -10,6 +10,7 @@ class Ebook
   attr :category
   attr :url
   attr :md5sum
+  attr :suffix
 
   def initialize(options)
     @author   = options[:author]
@@ -17,6 +18,7 @@ class Ebook
     @category = options[:category]
     @url      = options[:url]
     @md5sum   = options[:md5sum]
+    @suffix   = options[:suffix]
   end
 
   def download_verbose!
@@ -50,12 +52,17 @@ class Ebook
       URI.parse(url)
     end
 
-    def suffix
+    def suffix_from_path
       uri.path.split('.').last
     end
 
+    def smart_suffix
+      return suffix_from_path if suffix.nil?
+      suffix
+    end
+
     def output_file
-      "#{author} - #{title}.#{suffix}"
+      "#{author} - #{title}.#{smart_suffix}"
     end
 
     def exist?

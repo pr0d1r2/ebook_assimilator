@@ -8,7 +8,8 @@ describe Ebook do
     :title    => 'title',
     :category => 'category',
     :url      => 'url',
-    :md5sum   => 'md5sum'
+    :md5sum   => 'md5sum',
+    :suffix   => 'suffix'
   } }
   let(:the_object) { the_class.new(options) }
 
@@ -24,6 +25,8 @@ describe Ebook do
     its(:url) { should == 'url' }
 
     its(:md5sum) { should == 'md5sum' }
+
+    its(:suffix) { should == 'suffix' }
   end
 
   describe "#download_verbose!" do
@@ -152,13 +155,13 @@ describe Ebook do
     end
   end
 
-  describe "#suffix" do
+  describe "#suffix_from_path" do
     let(:path) { '/example/path/to/ebook.pdf' }
     let(:uri) { mock(:path => path) }
 
     describe "behavior" do
       before { the_object.stub!(:uri => uri) }
-      after { the_object.send(:suffix) }
+      after { the_object.send(:suffix_from_path) }
 
       it "should use uri" do
         the_object.should_receive(:uri).and_return(uri)
@@ -172,16 +175,34 @@ describe Ebook do
     describe "returns" do
       subject do
         the_object.stub!(:uri => uri)
-        the_object.send(:suffix)
+        the_object.send(:suffix_from_path)
       end
 
       it { should == 'pdf' }
     end
   end
 
+  describe "#smart_suffix" do
+    before do
+      the_object.stub!(:suffix => 'suffix')
+      the_object.stub!(:suffix_from_path => 'suffix_from_path')
+    end
+    subject { the_object.send(:smart_suffix) }
+
+    context "when suffix is nil" do
+      before { the_object.stub!(:suffix) }
+
+      it { should == "suffix_from_path" }
+    end
+
+    context "when suffix is not blank" do
+      it { should == "suffix" }
+    end
+  end
+
   describe "#output_file" do
     describe "behavior" do
-      before { the_object.stub!(:suffix => 'pdf') }
+      before { the_object.stub!(:smart_suffix => 'pdf') }
       after { the_object.send(:output_file) }
 
       it "should use author" do
@@ -193,13 +214,13 @@ describe Ebook do
       end
 
       it "should use suffix" do
-        the_object.should_receive(:suffix)
+        the_object.should_receive(:smart_suffix)
       end
     end
 
     describe "returns" do
       subject do
-        the_object.stub!(:suffix => 'pdf')
+        the_object.stub!(:smart_suffix => 'pdf')
         the_object.send(:output_file)
       end
 
