@@ -117,7 +117,177 @@ ebooks = [
     :url      => "http://www.guerrillafreelancing.com/download/2",
     :md5sum   => "73541e4a4dea97cebfcabb77db352df9",
     :suffix   => "pdf"
-  }
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "Earn More Money - earn1k-1.2-Pick-Your-Field-worksheet-form",
+    :category => "Freelance",
+    :url      => "http://earn1k.com/members/wp-content/uploads/earn1k-1.2-Pick-Your-Field-worksheet-form.pdf",
+    :md5sum   => "10c910f5f09fdf83ae8cb9fb31ded92c"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "Earn More Money - earn1k-1.2-worksheet2",
+    :category => "Freelance",
+    :url      => "http://earn1k.com/members/wp-content/uploads/earn1k-1.2-worksheet2.pdf",
+    :md5sum   => "94b2ce3889d0842fb16f3840a4f034d8"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "Earn More Money - earn1k-1.2-audio",
+    :category => "Freelance",
+    :url      => "http://earn1k.s3.amazonaws.com/audio/earn1k-1.2-audio.mp3",
+    :md5sum   => "018194197d116b749ae07809202bdc05"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "Earn1K Bonus PDF: Get Inside Their Heads",
+    :category => "Freelance",
+    :url      => "http://earn1k.s3.amazonaws.com/GetInsideTheirHeads.pdf",
+    :md5sum   => "e82c4348ac305841b5553bb6a46eca74"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "Earn1K Bonus Video: Unlocking side income case study",
+    :category => "Freelance",
+    :url      => "http://earn1k.com/privatelist/case-study-jackie-schmidt/",
+    :md5sum   => "d3eb8b7e07ff21f06cda39599fee98e7",
+    :suffix   => "html"
+  },
+  {
+    :author   => "Derek Sivers",
+    :title    => "How to Call Attention to Your Music",
+    :category => "Music",
+    :url      => "http://sivers.org/DerekSivers.pdf",
+    :md5sum   => "2476b5b0fc8cf21be32c9bb15284ba62"
+  },
+  {
+    :author   => "BJ Fogg",
+    :title    => "Master Class - Psychology Of Persuasion",
+    :category => "Psychology",
+    :url      => "http://cdn.earn1k.com.s3.amazonaws.com/audio/BJFogg_PsychologyOfPersuasion.mp3",
+    :md5sum   => "200b7660b53515e231cd03d7c3ac7f65"
+  },
+  {
+    :author   => "BJ Fogg",
+    :title    => "Master Class - Psychology Of Persuasion",
+    :category => "Psychology",
+    :url      => "http://earn1k.s3.amazonaws.com/FoggTranscript.pdf",
+    :md5sum   => "8793a8798e4123917c3a1254cf6e6766"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "30-day Hustling Course - Week 1 – Invisible Scripts - 1 Flipping The Script",
+    :category => "Freelance",
+    :url      => "http://earn1k.s3.amazonaws.com/ScriptAutomationReport.pdf",
+    :md5sum   => "b4f29c3621c66798110ae7462528b53a"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "30-day Hustling Course - Week 1 – Invisible Scripts - 2 Master Class Sneak Peek with Tim Ferriss",
+    :category => "Freelance",
+    :url      => "http://earn1k.s3.amazonaws.com/bonus/tim-ramit-bonus-video.zip",
+    :md5sum   => "2e939b8f526d0113841ff8cdc8844580"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "30-day Hustling Course - Week 1 – Invisible Scripts - 3 - 25 Hours A Day 8 Days A Week",
+    :category => "Freelance",
+    :url      => "http://earn1k.s3.amazonaws.com/time-clinic.zip",
+    :md5sum   => "02d5fda3a059466c36af25b57dd01cc5"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "30-day Hustling Course - Week 2 – Psychological Techniques to Dominate - 1 Bonus Psychology Study",
+    :category => "Freelance",
+    :url      => "http://earn1k.s3.amazonaws.com/BonusPsychologyCaseStudy.pdf",
+    :md5sum   => "60056d91f69ec600f2b88a17467ce72a"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "30-day Hustling Course - Week 2 – Psychological Techniques to Dominate - 2 Earn1K Bonus Material",
+    :category => "Freelance",
+    :url      => "http://earn1k.s3.amazonaws.com/GetInsideTheirHeads.pdf",
+    :md5sum   => "e82c4348ac305841b5553bb6a46eca74"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "30-day Hustling Course - Week 2 – Psychological Techniques to Dominate - 3 BJ Fogg Master Class",
+    :category => "Freelance",
+    :url      => "http://cdn.earn1k.com.s3.amazonaws.com/audio/BJFogg_PsychologyOfPersuasion.mp3",
+    :md5sum   => "200b7660b53515e231cd03d7c3ac7f65"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "30-day Hustling Course - Week 2 – Psychological Techniques to Dominate - 3 BJ Fogg Master Class",
+    :category => "Freelance",
+    :url      => "http://earn1k.s3.amazonaws.com/FoggTranscript.pdf",
+    :md5sum   => "8793a8798e4123917c3a1254cf6e6766"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "30-day Hustling Course - Week 3 – Negotiation - 1 Earn1K Bonus Material: From Free to Fee",
+    :category => "Freelance",
+    :url      => "http://cdn.earn1k.com/PDF/FreeToFee.pdf",
+    :md5sum   => "7474b017f3ee43db6ce37afcb832d611"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "30-day Hustling Course - Week 3 – Negotiation - 2 - 4 Negotiation Case Studies",
+    :category => "Freelance",
+    :url      => "http://earn1k.com/privatelist/4-negotiation-case-studies/",
+    :md5sum   => "973a0a93eeb5df824f03257089b0941d",
+    :suffix   => "html"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "30-day Hustling Course - Week 3 – Negotiation - 3 Derek Sivers Master Class",
+    :category => "Freelance",
+    :url      => "http://cdn.earn1k.com/audio/DerekSivers_CDBaby100Million.mp3",
+    :md5sum   => "dbd15e5a68ed2cf30fedba7c2700f522"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "30-day Hustling Course - Week 3 – Negotiation - 3 Derek Sivers Master Class",
+    :category => "Freelance",
+    :url      => "http://cdn.earn1k.com/PDF/SiversTranscript.pdf",
+    :md5sum   => "3a4a7a210188dbbd26ac67c2b20f6fb9"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "30-day Hustling Course - Week 3 – Negotiation - 4 My 69-min interview with a pickup artist",
+    :category => "Freelance",
+    :url      => "http://cdn.earn1k.com/audio/PickUpPodcast_RamitSethi.mp3",
+    :md5sum   => "7d61c7bbc35359fb3219fafccf289cd9"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "30-day Hustling Course - Week 3 – Negotiation - 4 My 69-min interview with a pickup artist",
+    :category => "Freelance",
+    :url      => "http://cdn.earn1k.com/PDF/PickUpPodcastTranscript.pdf",
+    :md5sum   => "6077f3c9021a69986634743dcf1ed907"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "30-day Hustling Course - Week 4 – How to be awesome - 1 Earn1K Bonus Material: Unlocking Side Income",
+    :category => "Freelance",
+    :url      => "http://cdn.earn1k.com/PDF/EarnMoreCaseStudy.pdf",
+    :md5sum   => "364c7d9d4e643410f6e6f92a4b9fa82e"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "30-day Hustling Course - Week 4 – How to be awesome - 2 Tim Ferris Interview",
+    :category => "Freelance",
+    :url      => "http://cdn.earn1k.com/audio/Tim-Ferriss-Psychology-of-Testing.mp3",
+    :md5sum   => "89d1ed6c9c329ed8fa9ee29b17c9aa5d"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "30-day Hustling Course - Week 4 – How to be awesome - 2 Tim Ferris Interview",
+    :category => "Freelance",
+    :url      => "http://cdn.earn1k.com/PDF/TimFerris-The-Psychology-of-Testing.pdf",
+    :md5sum   => "c909f96334be030ddf046ad9a3e6f79b"
+  },
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
@@ -126,4 +296,3 @@ Dir.chdir("EbooksAssimilated")
 ebooks.each do |ebook|
   ebook = Ebook.download_verbose!(ebook)
 end
-
