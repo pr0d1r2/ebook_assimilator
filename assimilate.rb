@@ -288,6 +288,13 @@ ebooks = [
     :url      => "http://cdn.earn1k.com/PDF/TimFerris-The-Psychology-of-Testing.pdf",
     :md5sum   => "c909f96334be030ddf046ad9a3e6f79b"
   },
+  {
+    :author   => "Intel",
+    :title    => "Dual-Channel DDR Memory Architecture White Paper",
+    :category => "Hardware",
+    :url      => "http://www.kingston.com/newtech/mkf_520ddrwhitepaper.pdf",
+    :md5sum   => "6deffff46cc820f40b245037880a73fe"
+  },
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
