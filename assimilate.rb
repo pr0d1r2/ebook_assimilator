@@ -295,6 +295,28 @@ ebooks = [
     :url      => "http://www.kingston.com/newtech/mkf_520ddrwhitepaper.pdf",
     :md5sum   => "6deffff46cc820f40b245037880a73fe"
   },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "7-day Private Course Day 1 - How To Maximize Motiviation and Optimize Your Time",
+    :category => "Freelance",
+    :url      => "http://earn1k.com/preview/how-to-maximize-motiviation-and-optimize-your-time/",
+    :md5sum   => "b0c1220c64992071d112a88715063cf9",
+    :suffix   => "html"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "7-day Private Course Day 1 - 12 Month Goals Worksheet",
+    :category => "Freelance",
+    :url      => "http://earn1k.com/members/wp-content/uploads/12-Month-Goals-Worksheet1.pdf",
+    :md5sum   => "24a669c3d7449176f7388c0e594d1cf4"
+  },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "7-day Private Course Day 1 - Time Clinic Video",
+    :category => "Freelance",
+    :url      => "http://earn1k.s3.amazonaws.com/time-clinic.zip",
+    :md5sum   => "02d5fda3a059466c36af25b57dd01cc5"
+  },
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
