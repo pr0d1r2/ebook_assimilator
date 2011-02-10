@@ -317,6 +317,13 @@ ebooks = [
     :url      => "http://earn1k.s3.amazonaws.com/time-clinic.zip",
     :md5sum   => "02d5fda3a059466c36af25b57dd01cc5"
   },
+  {
+    :author   => "Ramit Sethi",
+    :title    => "Webcast: Multiple streams of income on 5 hours a week",
+    :category => "Freelance",
+    :url      => "http://cdn.earn1k.com.s3.amazonaws.com/webinars/MultipleStreamsOfIncome.mov",
+    :md5sum   => "9156d82559b39961c79d8bf428c65a7b"
+  },
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
