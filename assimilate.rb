@@ -324,6 +324,13 @@ ebooks = [
     :url      => "http://cdn.earn1k.com.s3.amazonaws.com/webinars/MultipleStreamsOfIncome.mov",
     :md5sum   => "9156d82559b39961c79d8bf428c65a7b"
   },
+  {
+    :author   => "App Sumo",
+    :title    => "Action Video Google Analytics",
+    :category => "Web Development",
+    :url      => "http://sumobucket.s3.amazonaws.com/actionvid/ActionVideoGoogleAnalytics.mov",
+    :md5sum   => "679f9dda6f46781dc7b06f74989a6ea1"
+  }
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
