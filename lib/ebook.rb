@@ -11,6 +11,7 @@ class Ebook
   attr :url
   attr :md5sum
   attr :suffix
+  attr :method
 
   def initialize(options)
     @author   = options[:author]
@@ -19,6 +20,7 @@ class Ebook
     @url      = options[:url]
     @md5sum   = options[:md5sum]
     @suffix   = options[:suffix]
+    @method   = options[:method]
   end
 
   def download_verbose!
@@ -94,17 +96,21 @@ class Ebook
     end
 
     def download_raw
-      touch_file
-      Net::HTTP.start(uri.host) do |http|
-        f = open(output_file, "w")
-        begin
-          http.request_get(uri.request_uri) do |response|
-            response.read_body do |segment|
-              f.write(segment)
+      if method == "curl"
+        system("curl -L \"#{url}\" -o \"#{output_file}\"")
+      else
+        touch_file
+        Net::HTTP.start(uri.host) do |http|
+          f = open(output_file, "w")
+          begin
+            http.request_get(uri.request_uri) do |response|
+              response.read_body do |segment|
+                f.write(segment)
+              end
             end
+          ensure
+            f.close()
           end
-        ensure
-          f.close()
         end
       end
     end

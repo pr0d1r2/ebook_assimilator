@@ -330,6 +330,15 @@ ebooks = [
     :category => "Web Development",
     :url      => "http://sumobucket.s3.amazonaws.com/actionvid/ActionVideoGoogleAnalytics.mov",
     :md5sum   => "679f9dda6f46781dc7b06f74989a6ea1"
+  },
+  {
+    :author   => "iMagazine",
+    :title    => "2011-03",
+    :category => "Magazines",
+    :url      => "http://imagazine.enewsletter.pl/k/283/7aw/916498ed6ad67",
+    :md5sum   => "",
+    :suffix   => "pdf",
+    :method   => "curl"
   }
 ]
 

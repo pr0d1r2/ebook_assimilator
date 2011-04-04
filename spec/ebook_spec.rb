@@ -457,6 +457,21 @@ describe Ebook do
         }.to raise_error
       end
     end
+
+    context "when curl method selected" do
+      before do
+        the_object.stub!(
+          :url => "url",
+          :output_file => "output_file",
+          :method => "curl"
+        )
+      end
+      after { the_object.send(:download_raw) }
+
+      it "should run system command curl properly" do
+        the_object.should_receive(:system).with('curl -L "url" -o "output_file"')
+      end
+    end
   end
 
   describe "#warn_about_md5sum" do
