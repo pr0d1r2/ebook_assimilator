@@ -336,7 +336,7 @@ ebooks = [
     :title    => "2011-03",
     :category => "Magazines",
     :url      => "http://imagazine.enewsletter.pl/k/283/7aw/916498ed6ad67",
-    :md5sum   => "",
+    :md5sum   => "07ae5eacb733297d0e3ddfb133aea0b5",
     :suffix   => "pdf",
     :method   => "curl"
   }
