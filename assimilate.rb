@@ -366,6 +366,15 @@ ebooks = [
     :md5sum   => "54f6fe9bd0c3659b8f7151ac8bbad292",
     :suffix   => "pdf",
     :method   => "curl"
+  },
+  {
+    :author   => "iMagazine",
+    :title    => "2010-11",
+    :category => "Magazines",
+    :url      => "http://imagazine.enewsletter.pl/k/283/6n2/066c52cad77c3",
+    :md5sum   => "a6487b35eea7edb600dd6596aeaaeab3",
+    :suffix   => "pdf",
+    :method   => "curl"
   }
 ]
 
