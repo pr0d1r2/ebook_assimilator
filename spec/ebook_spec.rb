@@ -4,12 +4,14 @@ describe Ebook do
 
   let(:the_class) { Ebook }
   let(:options) { {
-    :author   => 'author',
-    :title    => 'title',
-    :category => 'category',
-    :url      => 'url',
-    :md5sum   => 'md5sum',
-    :suffix   => 'suffix'
+    :author    => 'author',
+    :title     => 'title',
+    :category  => 'category',
+    :url       => 'url',
+    :md5sum    => 'md5sum',
+    :suffix    => 'suffix',
+    :method    => 'method',
+    :file_size => 'file_size',
   } }
   let(:the_object) { the_class.new(options) }
 
@@ -27,6 +29,10 @@ describe Ebook do
     its(:md5sum) { should == 'md5sum' }
 
     its(:suffix) { should == 'suffix' }
+
+    its(:method) { should == 'method' }
+
+    its(:file_size) { should == 'file_size' }
   end
 
   describe "#download_verbose!" do
@@ -252,6 +258,29 @@ describe Ebook do
     end
   end
 
+  describe "#output_file_size" do
+    let(:the_size) { mock }
+    let(:output_file) { mock }
+    before do
+      the_object.stub!(:output_file => output_file)
+      File.stub!(:size).with(output_file).and_return(the_size)
+    end
+
+    describe "behavior" do
+      after { the_object.send(:output_file_size) }
+
+      it "should check file size" do
+        File.should_receive(:size).with(output_file)
+      end
+    end
+
+    describe "returns" do
+      subject { the_object.send(:output_file_size) }
+
+      it { should == the_size }
+    end
+  end
+
   describe "#output_file_body" do
     let(:output_file) { mock }
 
@@ -326,34 +355,60 @@ describe Ebook do
     end
   end
 
+  describe "#size_ok?" do
+    let(:file_size) { 8472 }
+    before do
+      the_object.stub!(
+        :file_size => file_size,
+        :output_file_size => output_file_size
+      )
+    end
+    subject { the_object.send(:size_ok?) }
+
+    context "when output_file_size equals file_size" do
+      let(:output_file_size) { 8472 }
+
+      it { should be_true }
+    end
+
+    context "when output_file_size not equals file_size" do
+      let(:output_file_size) { 5618 }
+
+      it { should be_false }
+    end
+  end
+
   describe "#ok?" do
+    subject { the_object.send(:ok?) }
+
     context "when file exist" do
-      context "and its md5sum is ok" do
-        subject do
-          the_object.stub!(:exist? => true)
-          the_object.stub!(:md5sum_ok? => true)
-          the_object.send(:ok?)
+      before { the_object.stub!(:exist? => true) }
+
+      context "and its size is ok" do
+        before { the_object.stub!(:size_ok? => true) }
+
+        context "and its md5sum is ok" do
+          before { the_object.stub!(:md5sum_ok? => true) }
+
+          it { should be_true }
         end
 
-        it { should be_true }
+        context "and its md5sum is wrong" do
+          before { the_object.stub!(:md5sum_ok? => false) }
+
+          it { should be_false }
+        end
       end
 
-      context "and its md5sum is wrong" do
-        subject do
-          the_object.stub!(:exist? => true)
-          the_object.stub!(:md5sum_ok? => false)
-          the_object.send(:ok?)
-        end
+      context "and its size is wrong" do
+        before { the_object.stub!(:size_ok? => false) }
 
         it { should be_false }
       end
     end
 
-    context "when file exist" do
-      subject do
-        the_object.stub!(:exist? => false)
-        the_object.send(:ok?)
-      end
+    context "when file not exist" do
+      before { the_object.stub!(:exist? => false) }
 
       it { should be_false }
     end

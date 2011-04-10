@@ -12,15 +12,17 @@ class Ebook
   attr :md5sum
   attr :suffix
   attr :method
+  attr :file_size
 
   def initialize(options)
-    @author   = options[:author]
-    @title    = options[:title]
-    @category = options[:category]
-    @url      = options[:url]
-    @md5sum   = options[:md5sum]
-    @suffix   = options[:suffix]
-    @method   = options[:method]
+    @author    = options[:author]
+    @title     = options[:title]
+    @category  = options[:category]
+    @url       = options[:url]
+    @md5sum    = options[:md5sum]
+    @suffix    = options[:suffix]
+    @method    = options[:method]
+    @file_size = options[:file_size]
   end
 
   def download_verbose!
@@ -71,6 +73,10 @@ class Ebook
       File.exist?(output_file)
     end
 
+    def output_file_size
+      File.size(output_file)
+    end
+
     def output_file_body
       File.read(output_file)
     end
@@ -83,8 +89,12 @@ class Ebook
       existing_md5sum == md5sum
     end
 
+    def size_ok?
+      output_file_size == file_size
+    end
+
     def ok?
-      exist? && md5sum_ok?
+      exist? && size_ok? && md5sum_ok?
     end
 
     def download
