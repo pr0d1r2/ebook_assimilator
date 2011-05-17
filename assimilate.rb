@@ -445,7 +445,16 @@ ebooks = [
     :suffix    => "pdf",
     :method    => "curl",
     :file_size => 20298822
-  }
+  },
+  {
+    :author    => "Doomtrooper",
+    :title     => "Zasady",
+    :category  => "Games",
+    :url       => "http://doomtrooperfaq.republika.pl/zasady.pdf",
+    :md5sum    => "1e5eb36b6b4de5fe3b715bb76180f13b",
+    :suffix    => "pdf",
+    :file_size => 295124
+  },
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
