@@ -455,6 +455,15 @@ ebooks = [
     :suffix    => "pdf",
     :file_size => 295124
   },
+  {
+    :author    => "Bruce Momjia",
+    :title     => "PostgreSQL Hardware Performance Tuning",
+    :category  => "Databases",
+    :url       => "http://www.postgresql.org/files/documentation/books/aw_pgsql/hw_performance.pdf",
+    :md5sum    => "28a4f4bfa93dfdd1e60d1b2bc264c4e8",
+    :suffix    => "pdf",
+    :file_size => 139525
+  },
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
