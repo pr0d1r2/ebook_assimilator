@@ -474,6 +474,15 @@ ebooks = [
     :suffix    => "pdf",
     :file_size => 139525
   },
+  {
+    :author    => "Simon Black",
+    :title     => "Six Pillars Of Self Reliance",
+    :category  => "Independence",
+    :url       => "http://sovereignman.com/aot/SixPillarsOfSelfReliance.pdf",
+    :md5sum    => "041a2b52d308804b025d6f0684cc5898",
+    :suffix    => "pdf",
+    :file_size => 536866
+  },
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
