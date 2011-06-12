@@ -492,6 +492,33 @@ ebooks = [
     :suffix    => "pdf",
     :file_size => 542228
   },
+  {
+    :author    => "Eric Ries",
+    :title     => "The Lean Startup",
+    :category  => "Startup",
+    :url       => "http://s3.appsumo.com/action-videos/LeanStartup/Eric%20Ries%20The%20Lean%20Startup%20full.mov",
+    :md5sum    => "280e290a01ebe6726aa7141908c9d1e8",
+    :suffix    => "mov",
+    :file_size => 962536604
+  },
+  {
+    :author    => "Eric Ries",
+    :title     => "The Lean Startup",
+    :category  => "Startup",
+    :url       => "http://s3.appsumo.com/action-videos/LeanStartup/Eric%20Ries%20Lean%20Startup.mp3",
+    :md5sum    => "6faea0ffbc24ee8d168d452d90f026e9",
+    :suffix    => "mp3",
+    :file_size => 69675884
+  },
+  {
+    :author    => "Eric Ries",
+    :title     => "The Lean Startup",
+    :category  => "Startup",
+    :url       => "http://s3.appsumo.com/action-videos/LeanStartup/Lean%20Startup%20with%20Eric%20Ries.pdf",
+    :md5sum    => "427b74c3bba4b1390ef52745a5f07c7b",
+    :suffix    => "pdf",
+    :file_size => 206563
+  },
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
