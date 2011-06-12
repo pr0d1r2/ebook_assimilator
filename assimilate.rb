@@ -483,6 +483,15 @@ ebooks = [
     :suffix    => "pdf",
     :file_size => 536866
   },
+  {
+    :author    => "Craig Ballantyne",
+    :title     => "Internet Independence Report II",
+    :category  => "Independence",
+    :url       => "http://internetindependence.com/Build%20a%20Website%20Business_II_Report.pdf",
+    :md5sum    => "a1451de1b78ca4aafc2637d1ef683405",
+    :suffix    => "pdf",
+    :file_size => 542228
+  },
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
