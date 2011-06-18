@@ -519,6 +519,33 @@ ebooks = [
     :suffix    => "pdf",
     :file_size => 206563
   },
+  {
+    :author    => "Justin Cutroni",
+    :title     => "New Google Analytics for iOS + Android",
+    :category  => "Web Development",
+    :url       => "http://s3.appsumo.com/action-videos/Google%20Analytics%20Pt%20II/Google%20Analytics%20Pt%20II%20Justin%20Cutroni.mov",
+    :md5sum    => "42bf4800c76882de3e559a3287578cda",
+    :suffix    => "mov",
+    :file_size => 1027779179
+  },
+  {
+    :author    => "Justin Cutroni",
+    :title     => "New Google Analytics for iOS + Android",
+    :category  => "Web Development",
+    :url       => "http://s3.appsumo.com/action-videos/Google%20Analytics%20Pt%20II/New%20Google%20Analytics%20for%20Mobile%20Justin%20Cutroni.mp3",
+    :md5sum    => "864730122a5693759b5235361189bf03",
+    :suffix    => "mp3",
+    :file_size => 59087726
+  },
+  {
+    :author    => "Justin Cutroni",
+    :title     => "New Google Analytics for iOS + Android",
+    :category  => "Web Development",
+    :url       => "http://s3.appsumo.com/action-videos/Google%20Analytics%20Pt%20II/New%20Google%20Analytics%20for%20Mobile.pdf",
+    :md5sum    => "506efc25f0898022e9d172fbb6f3e41c",
+    :suffix    => "pdf",
+    :file_size => 260931
+  },
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
