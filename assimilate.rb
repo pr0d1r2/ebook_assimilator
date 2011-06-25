@@ -546,6 +546,33 @@ ebooks = [
     :suffix    => "pdf",
     :file_size => 260931
   },
+  {
+    :author    => "Tom Critchlow",
+    :title     => "Google Docs",
+    :category  => "Freelance",
+    :url       => "http://s3.appsumo.com.s3.amazonaws.com/action-videos/GoogleDocs/Google_Docs_w_Tom_Critchlow_Full_Download.mov",
+    :md5sum    => "42bf4800c76882de3e559a3287578cda",
+    :suffix    => "mov",
+    :file_size => 1027779179
+  },
+  {
+    :author    => "Tom Critchlow",
+    :title     => "Google Docs",
+    :category  => "Freelance",
+    :url       => "http://s3.appsumo.com.s3.amazonaws.com/action-videos/GoogleDocs/Google%20Docs%20Unleashed%20w%20Tom%20Critchlow.mp3",
+    :md5sum    => "864730122a5693759b5235361189bf03",
+    :suffix    => "mp3",
+    :file_size => 59087726
+  },
+  {
+    :author    => "Tom Critchlow",
+    :title     => "Google Docs",
+    :category  => "Freelance",
+    :url       => "http://s3.appsumo.com.s3.amazonaws.com/action-videos/GoogleDocs/Google%20Docs%20Unleashed%20w%20Tom%20Critchlow.pdf",
+    :md5sum    => "506efc25f0898022e9d172fbb6f3e41c",
+    :suffix    => "pdf",
+    :file_size => 260931
+  },
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
