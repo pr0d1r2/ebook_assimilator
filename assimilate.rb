@@ -551,27 +551,27 @@ ebooks = [
     :title     => "Google Docs",
     :category  => "Freelance",
     :url       => "http://s3.appsumo.com.s3.amazonaws.com/action-videos/GoogleDocs/Google_Docs_w_Tom_Critchlow_Full_Download.mov",
-    :md5sum    => "42bf4800c76882de3e559a3287578cda",
+    :md5sum    => "62fd8f0bbfecb2f4832e9e8e4ac674f4",
     :suffix    => "mov",
-    :file_size => 1027779179
+    :file_size => 1696996824
   },
   {
     :author    => "Tom Critchlow",
     :title     => "Google Docs",
     :category  => "Freelance",
     :url       => "http://s3.appsumo.com.s3.amazonaws.com/action-videos/GoogleDocs/Google%20Docs%20Unleashed%20w%20Tom%20Critchlow.mp3",
-    :md5sum    => "864730122a5693759b5235361189bf03",
+    :md5sum    => "22068df3f1b421f8608b55736600f645",
     :suffix    => "mp3",
-    :file_size => 59087726
+    :file_size => 55215752
   },
   {
     :author    => "Tom Critchlow",
     :title     => "Google Docs",
     :category  => "Freelance",
     :url       => "http://s3.appsumo.com.s3.amazonaws.com/action-videos/GoogleDocs/Google%20Docs%20Unleashed%20w%20Tom%20Critchlow.pdf",
-    :md5sum    => "506efc25f0898022e9d172fbb6f3e41c",
+    :md5sum    => "371bb73ca6dd6bf39088a2dee4b2e636",
     :suffix    => "pdf",
-    :file_size => 260931
+    :file_size => 258627
   },
 ]
 
