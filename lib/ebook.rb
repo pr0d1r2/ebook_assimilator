@@ -83,7 +83,7 @@ class Ebook
     end
 
     def existing_md5sum
-      `md5sum #{output_file} | cut -b1-32`.chop
+      `md5sum "#{output_file}" | cut -b1-32`.chop
     end
 
     def md5sum_ok?
