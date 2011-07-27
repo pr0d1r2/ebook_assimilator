@@ -41,6 +41,7 @@ describe Ebook do
       the_object.stub!(:enter_category_dir)
       the_object.stub!(:print_information)
       the_object.stub!(:download)
+      the_object.stub!(:warn_about_size)
       the_object.stub!(:warn_about_md5sum)
       the_object.stub!(:exit_category_dir)
     end
@@ -60,6 +61,10 @@ describe Ebook do
 
     it "should call #download" do
       the_object.should_receive(:download)
+    end
+
+    it "should call #warn_about_size" do
+      the_object.should_receive(:warn_about_size)
     end
 
     it "should call #warn_about_md5sum" do
@@ -509,6 +514,38 @@ describe Ebook do
 
       it "should run system command curl properly" do
         the_object.should_receive(:system).with('curl -L "url" -o "output_file"')
+      end
+    end
+  end
+
+  describe "#warn_about_size" do
+    after { the_object.send(:warn_about_size) }
+    before do
+      the_object.stub!(:puts)
+      the_object.stub!(:output_file_size)
+    end
+
+    context "when size is ok" do
+      before { the_object.stub!(:size_ok? => true) }
+
+      it "should not puts warning" do
+        the_object.should_not_receive(:puts)
+      end
+    end
+
+    context "when size is not ok" do
+      before { the_object.stub!(:size_ok? => false) }
+
+      it "should not puts warning" do
+        the_object.should_receive(:puts)
+      end
+
+      it "should notify about expected file size" do
+        the_object.should_receive(:file_size)
+      end
+
+      it "should notify about existing file size" do
+        the_object.should_receive(:output_file_size)
       end
     end
   end

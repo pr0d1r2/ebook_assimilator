@@ -30,6 +30,7 @@ class Ebook
     enter_category_dir
     print_information
     download
+    warn_about_size
     warn_about_md5sum
     exit_category_dir
   end
@@ -123,6 +124,11 @@ class Ebook
           end
         end
       end
+    end
+
+    def warn_about_size
+      return if size_ok?
+      puts "WARNING: file size different from expected. Propably problem with download. (expected: #{file_size}, existing: #{output_file_size})"
     end
 
     def warn_about_md5sum
