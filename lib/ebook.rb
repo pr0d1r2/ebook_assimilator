@@ -82,7 +82,7 @@ class Ebook
     end
 
     def existing_md5sum
-      Digest::MD5.hexdigest(output_file_body)
+      `md5sum #{output_file} | cut -b1-32`.chop
     end
 
     def md5sum_ok?

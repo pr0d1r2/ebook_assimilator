@@ -306,27 +306,11 @@ describe Ebook do
   end
 
   describe "#existing_md5sum" do
-    let(:output_file_body) { mock }
+    let(:output_file) { "README" }
+    before { the_object.stub!(:output_file => output_file) }
+    subject { the_object.send(:existing_md5sum) }
 
-    describe "behavior" do
-      before { the_object.stub!(:output_file_body => output_file_body) }
-      after { the_object.send(:existing_md5sum) }
-
-      it "should existing_md5sum existing_md5sum from output_file_body" do
-        Digest::MD5.should_receive(:hexdigest).with(output_file_body)
-      end
-    end
-
-    describe "returns" do
-      let(:file_md5sum) { mock }
-      subject do
-        the_object.stub!(:output_file_body => output_file_body)
-        Digest::MD5.stub!(:hexdigest).with(output_file_body).and_return(file_md5sum)
-        the_object.send(:existing_md5sum)
-      end
-
-      it { should == file_md5sum }
-    end
+    it { should == "c20a2fcb7d13754fcdc6dedabaa125ae" }
   end
 
   describe "#md5sum_ok?" do
