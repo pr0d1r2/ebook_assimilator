@@ -133,7 +133,7 @@ class Ebook
 
     def warn_about_md5sum
       return if md5sum_ok?
-      puts "WARNING: file MD5 sum different from expected. Propably problem with download."
+      puts "WARNING: file MD5 sum different from expected. Propably problem with download. (expected: #{md5sum}, existing: #{existing_md5sum})"
     end
 
     def print_information

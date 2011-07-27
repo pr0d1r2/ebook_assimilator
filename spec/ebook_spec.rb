@@ -552,6 +552,10 @@ describe Ebook do
 
   describe "#warn_about_md5sum" do
     after { the_object.send(:warn_about_md5sum) }
+    before do
+      the_object.stub!(:puts)
+      the_object.stub!(:existing_md5sum)
+    end
 
     context "when md5sum is ok" do
       before { the_object.stub!(:md5sum_ok? => true) }
@@ -566,6 +570,14 @@ describe Ebook do
 
       it "should not puts warning" do
         the_object.should_receive(:puts)
+      end
+
+      it "should notify about expected file md5sum" do
+        the_object.should_receive(:md5sum)
+      end
+
+      it "should notify about existing file md5sum" do
+        the_object.should_receive(:existing_md5sum)
       end
     end
   end
