@@ -378,6 +378,16 @@ ebooks = [
   },
   {
     :author    => "iMagazine",
+    :title     => "2011-07_i_08",
+    :category  => "Magazines",
+    :url       => "http://imagazine.enewsletter.pl/k/283/7l0/8e8b8fffbad1b",
+    :md5sum    => "67778a1c3dceea108742326c6f79c808",
+    :suffix    => "pdf",
+    :method    => "curl",
+    :file_size => 26698954
+  },
+  {
+    :author    => "iMagazine",
     :title     => "2011-06",
     :category  => "Magazines",
     :url       => "http://imagazine.enewsletter.pl/k/283/7gb/9505b9f4f47c3",
