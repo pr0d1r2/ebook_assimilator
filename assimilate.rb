@@ -7,7 +7,7 @@ require 'net/http'
 require 'uri'
 require 'fileutils'
 
-require 'lib/ebook'
+require_relative 'lib/ebook'
 
 Dir.chdir ENV['HOME']
 
