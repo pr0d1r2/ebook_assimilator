@@ -585,6 +585,33 @@ ebooks = [
     :suffix    => "pdf",
     :file_size => 258627
   },
+  {
+    :author    => "Derek Sivers",
+    :title     => "Uncommon Sense",
+    :category  => "Freelance",
+    :url       => "http://s3.appsumo.com/action-videos/Uncommon%20Sense/Uncommon%20Sense.mov",
+    :md5sum    => "e241b86b11466093104cce4f9be0afff",
+    :suffix    => "mov",
+    :file_size => 1270354615
+  },
+  {
+    :author    => "Derek Sivers",
+    :title     => "Uncommon Sense",
+    :category  => "Freelance",
+    :url       => "http://s3.appsumo.com/action-videos/Uncommon%20Sense/Uncommon%20Sense.mp3",
+    :md5sum    => "d5b3d162b6e763d50807f6bffd6af242",
+    :suffix    => "mp3",
+    :file_size => 45351915
+  },
+  {
+    :author    => "Derek Sivers",
+    :title     => "Uncommon Sense",
+    :category  => "Freelance",
+    :url       => "http://s3.appsumo.com/action-videos/Uncommon%20Sense/Uncommon%20Sense%20with%20Derek%20Sivers.pdf",
+    :md5sum    => "056641d81b26f9324c05d1b81def73bb",
+    :suffix    => "pdf",
+    :file_size => 246037
+  },
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
