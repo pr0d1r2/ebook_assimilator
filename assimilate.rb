@@ -612,6 +612,15 @@ ebooks = [
     :suffix    => "pdf",
     :file_size => 246037
   },
+  {
+    :author    => "Scribd",
+    :title     => "The Handbook of Epictetus",
+    :category  => "Philosophy",
+    :url       => "http://www.scribd.com/mobile/documents/61566577",
+    :md5sum    => "4646ee23a2a6f6c54ac7a8f22e8fc862",
+    :suffix    => "pdf",
+    :file_size => 8225688
+  },
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
