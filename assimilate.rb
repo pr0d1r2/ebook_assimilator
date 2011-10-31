@@ -621,6 +621,15 @@ ebooks = [
     :suffix    => "pdf",
     :file_size => 8225688
   },
+  {
+    :author    => "Bartek Popiel",
+    :title     => "Jak podwoic produktywnosc",
+    :category  => "Productivity",
+    :url       => "http://bartekpopiel.pl/ebook/jak-podwoic-produktywnosc.pdf",
+    :md5sum    => "54b227dceb05c6fc8466a84b9d3eadec",
+    :suffix    => "pdf",
+    :file_size => 1710033
+  },
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
