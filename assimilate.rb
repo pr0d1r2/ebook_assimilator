@@ -630,6 +630,15 @@ ebooks = [
     :suffix    => "pdf",
     :file_size => 1710033
   },
+  {
+    :author    => "Michal Maj",
+    :title     => "Podroze za grosze",
+    :category  => "Productivity",
+    :url       => "http://zyciejestpiekne.eu/Podroze_za_grosze.pdf",
+    :md5sum    => "512842d953f3aae54f9495bc47bc318b",
+    :suffix    => "pdf",
+    :file_size => 12051930
+  },
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
