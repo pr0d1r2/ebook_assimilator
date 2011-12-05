@@ -639,6 +639,15 @@ ebooks = [
     :suffix    => "pdf",
     :file_size => 12051930
   },
+  {
+    :author    => "Laura Stack",
+    :title     => "111 Ways to Improve your Personal Productivity",
+    :category  => "Productivity",
+    :url       => "http://www.theproductivitypro.com/pdfs/111_Ways_to_Improve_Your_Personal_Productivity.pdf",
+    :md5sum    => "aaf66353191c18c17a2f64f4b46d313a",
+    :suffix    => "pdf",
+    :file_size => 590488
+  }
 ]
 
 Dir.mkdir("EbooksAssimilated") unless File.directory?("EbooksAssimilated")
